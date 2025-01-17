@@ -95,10 +95,12 @@ describe('letter matches', () => {
 // end of group
 });
 
+// Bonus:
+
 // testing error handling
 describe('error messages', () => {
 
-    // test input of "two" and keyword of "test"
+    // MVP 2: test input of "two" and keyword of "test"
     test('input "two"  should return error message: "Input must be a 4 letter word" }', () => {
         // assign
         const keyword = 'test';
@@ -108,7 +110,7 @@ describe('error messages', () => {
         expect(() => letterMatches(keyword, input)).toThrowError(expected);
     });
 
-    // test input of "tEst" and keyword of "test"
+    // MVP 3: test input of "tEst" and keyword of "test"
     test('input "tEst" should return error message: "Input must only contain lowercase letters" }', () => {
         // assign
         const keyword = 'test';
@@ -118,7 +120,7 @@ describe('error messages', () => {
         expect(() => letterMatches(keyword, input)).toThrowError(expected);
     });
     
-    // test input of "t3st" and keyword of "test"
+    // MVP 3: test input of "t3st" and keyword of "test"
     test('input "t3st" should return error message: "Input must only contain lowercase letters" }', () => {
         // assign
         const keyword = 'test';
